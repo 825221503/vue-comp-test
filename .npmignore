@@ -4,6 +4,9 @@ node_modules
 /packages
 /examples
 /public
+/docs
+/deploy
+/build
 
 
 # local env files

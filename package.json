@@ -7,7 +7,10 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build:lib": "vue-cli-service build --target lib --dest lib --name test-comp-base packages/index.js"
+    "build:lib": "vue-cli-service build --target lib --dest lib --name test-comp-base packages/index.js && npm run build",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "docs:deploy": "bash ./deploy/docs.sh"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -16,10 +19,12 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
+    "@vuepress/plugin-back-to-top": "^1.9.7",
     "node-sass": "^4.14.1",
     "sass": "^1.49.0",
     "sass-loader": "^7.3.1",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "vuepress": "^1.9.7"
   },
   "author": "xsq",
   "license": "MIT"
